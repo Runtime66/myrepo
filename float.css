@@ -1,0 +1,33 @@
+/* FLOAT PROPERTY IS USED TO MAKE AN ELEMENT MOVE TO LEFT,RIGHT etc */
+/* To make it as single page resume we use properties on body as well */
+body{
+    margin:auto;
+    max-width: 900px;
+    width: 90%;
+    font-size: 18px;
+}
+.user{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    background-color:lightblue;
+    /* 'em' means same size as parent element */
+    padding: 1em;
+    /* FLOAT ENSURES THE ALIGNMENTOF THE PIC */
+    float: left;
+    /* AFTER USING FLOAT WE HAVE THE TEXT VERY CLOSE TO THE PIC SO WE NEED TO GIVE MARGIN RIGHT TO THE PIC and we know 
+    if margin has only one value then that margin applies to all 4 sides */
+    margin: 20px;
+}
+#new{
+    background-color: lightskyblue;
+    color: darkmagenta;
+    padding: 25px;
+}
+/* AS 2ND PARA IS SHOWN WITH FLOAT PROPERTY i:e float property effects 2nd para as well and if we want to change it
+so that 2nd para comes as normal para and not with float,we use CLEAR property on 2nd para */
+.cleared{
+    /* Since 2nd para is effected from left of the float property,we use "clear:left".If float would have been set to right
+    then we use "clear:right"  */
+    clear: left;
+}
